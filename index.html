@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POW</title>
+</head>
+
+<body>
+  <h1>Carros V12</h1>
+  <input type="text" list="escolhaCarro" id="carros">
+  <datalist id="escolhaCarro">
+    <option value="Jaguar XJS">
+    <option value="BMW 850i">
+    <option value="Mercedes-Benz SL600 (R129 e R230)">
+    <option value="Aston Martin DBS">
+    <option value="BMW 850i">
+
+
+  </datalist>
+  <button onclick="escolhaCarro()">Buscar</button>
+  <input type="button" value="Apagar" onclick="document.getElementById('carros').value = ''" />
+  <div id="frase"></div>
+
+  <!-- https://www.hotcars.com/cheapest-v12-powered-cars-used-market/#mercedes-benz-sl600-r129-and-r230 
+  colocar a imagem junto com o texto-->
+
+  <script>
+    function escolhaCarro() {
+      var texto;
+      var carro = document.getElementById("carros").value;
+      switch (carro) {
+        case "Jaguar XJS":
+          texto = "Introduzido em 1975, o primeiro problema do Jaguar XJS foi a reputação que tinha de cumprir, pois foi projetado e vendido como um substituto para o lendário E-Type. Abandonando as lindas linhas suaves do corpo, o XJS também era uma magnitude mais pesada que o E-Type. Mas, ainda um carro muito bonito, o XJS se saiu bem como um cupê de luxo e durou a produção até 1996. Alimentado por um (notoriamente não confiável) V12, o Jaguar XJS é uma maneira barata de obter um motor V12 e um clássico britânico."
+          break;
+        case "BMW 850i":
+          texto = "Apresentado no Salão do Automóvel de Frankfurt de 1989, o Série 8 era um carro muito atraente no início, elogiando muita inovação, luxo, desempenho e boa aparência. Alimentado por um V12, com transmissão manual de 6 velocidades e um coeficiente de arrasto impressionantemente baixo, o 850i era um bom carro e ficou ainda melhor com atualizações como o 850CSi."
+          break;
+        case "Mercedes-Benz SL600 (R129 e R230)":
+          texto = "o Mercedes SL600 é um grand tourer esportivo e luxuoso, mas não um carro esportivo ágil. Ainda em produção, porém, o SL-Class serve como um dos carros de luxo topo de linha da marca. Oferecido com muitos tipos de motor, o SL indica qual motor ele usa pelo número, com SL600 representando o 6.0 L V12. Introduzido em 1993, o SL600 trouxe consigo aquele grande V12, produzindo impressionantes para a época 389 cv e 420 lb-ft de torque. "
+          break;
+        case "Aston Martin DBS":
+          texto = "O modelo Aston Martin DBS - anteriormente conhecido como DBS Superleggera antes de 2022. O DBS oferece o melhor quando se trata de Astons. Por um lado, seu V12 biturbo AM31 de 5,2 litros envia 715 pôneis para as rodas traseiras por meio de um manual de oito marchas, resultando em uma velocidade máxima de 211 mph. Outros recursos interessantes incluem um difusor duplo inspirado na F1, um diferencial mecânico de deslizamento limitado para desempenho máximo na pista e um sistema de escapamento de tubo quádruplo de titânio para a melhor nota de escapamento."
+          break;
+        case "Gêmeos":
+          texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+          break;
+        case "Gêmeos":
+          texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+          break;
+        case "Gêmeos":
+          texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+          break;
+
+        default:
+          texto = "Insira um signo existente"
+      }
+      document.getElementById("frase").innerHTML = texto
+    }
+  </script>
+</body>
+
+</html>
