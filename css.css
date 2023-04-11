@@ -1,0 +1,27 @@
+#8386f5 #3d43b4 #041348 #083e12 #1afe49 #fefefe #0b0b0b * {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  max-height: 100vh;
+  font-family: rajdhani, sans-serif;
+  overflow: hidden;
+} 
+
+.conteudo {
+  width: 700px;
+  height: 600px;
+  margin: 16px auto;
+  background-color: aqua;
+}
+#imgCarro {
+  max-width: 100%;
+}
+p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: .4px;
+  text-align: justify;
+}
+
+
