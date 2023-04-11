@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   font-family: rajdhani, sans-serif;
-  overflow: hidden;
+
   background: linear-gradient(160deg, #8386f5, #3d43b4);
   background-repeat: no-repeat;
   position: relative;
@@ -17,7 +17,6 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 60px;
-  /* margin: 10px; */
 }
 h1 {
   font-size: 1.5rem;
